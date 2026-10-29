@@ -1,0 +1,9 @@
+project: savantenvs/capstone
+target: fuzz_disasm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_disasm/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_disasm
+    libfuzzer: true
+    timeout: 10
