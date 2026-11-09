@@ -1,0 +1,6 @@
+project: savantenvs/capstone
+target: fuzz_sh-mined-8778e28
+cmds:
+  - cmd: /mayhem/fuzz_sh
+    libfuzzer: true
+    timeout: 10
